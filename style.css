@@ -6,11 +6,7 @@
 a {
     all: unset;
 }
-/*
-img {
-    height: 400px;
-    width: 400px;
-}*/
+
 .header {
     font-size: 24px;
     color: #F9FAF8;
@@ -52,14 +48,17 @@ img {
 }
 
 footer {
-    display: flex;
     background-color: #1f2937;
     color: #F9FAF8;
-    justify-content: center;
+    text-align: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
-/* flexbox code
+/* flexbox code practice
 parent boxes= 5
 excluding footer */
 
@@ -120,25 +119,29 @@ excluding footer */
     padding-right: 72px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .random-img {
+    display: flex;
+    justify-content: center;
     flex: 1;
     padding-bottom: 50px;
-    
+    text-align: center;
 }
 
-.random-img > img {
+.random-img > figure > img {
     height: 200px;
     width: 200px;
-    /*display: inline-flex;
-    flex-wrap: wrap;*/
-
-
     border-radius: 50px;
     padding: 20px;
-    
-    
+}
+
+.random img figcaption {
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    text-align: center;
 }
 
 /* parent box 4*/
@@ -149,7 +152,6 @@ excluding footer */
     color: #1f2937;
     padding: 72px;
     flex-direction: column;
-    padding-bottom: 100px;
 }
 
 .inspiring-quote {
@@ -163,27 +165,30 @@ excluding footer */
     align-self: flex-end;
     font-size: 28px;
     font-weight: bold;
-    padding-bottom: 100px;
+    
 }
 
 /* parent box 5*/
 .signup {
    display: flex;
-
    background-color: #3882F6;
    color: #F9FAF8;
    border-radius: 15px;
    padding: 30px;
-   padding-left: 70px;
-   padding-right: 70px;
    line-height: 0px;
    flex-wrap: wrap;
+   margin: 72px;
 }
 
 .signup-content {
     display: flex;
     flex-direction: column;
-    
+}
+
+.signup-button {
+    display: flex;
+    align-self: center;
+    padding-left: 40px;
 }
 
  /* Call to action - Sign up button */
@@ -196,9 +201,7 @@ excluding footer */
     height: 30px;
     width: 130px;
     text-align: center;
-    align-content: center;
     font-weight: bold;
-    object-position: bottom;
 }
 
 
